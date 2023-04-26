@@ -74,7 +74,7 @@ const display = document.querySelector("#display");
 
 function fetchData() {
     const brandName = search.value;
-    const apiURL = `http://makeup-api.herokuapp.com/api/v1/products.json?brand=${brandName}`;
+    const apiURL = `https://makeup-api.herokuapp.com/api/v1/products.json?brand=${brandName}`;
 
     fetch(apiURL)
         .then(res => res.json())
